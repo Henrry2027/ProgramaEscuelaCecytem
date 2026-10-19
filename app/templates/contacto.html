@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+{% block contenido %}
+<h1>📬 Contáctanos</h1>
+<p>Envíanos tus dudas o sugerencias.</p>
+<form method="POST" class="formulario">
+    <label>Nombre:</label>
+    <input type="text" name="nombre" 
+    placeholder="Tu nombre" required>
+    
+    <label>Correo electrónico:</label>
+    <input type="email" name="correo" 
+    placeholder="Tu correo" required>
+    
+    <label>Mensaje:</label>
+    <textarea name="mensaje" rows="4" 
+    placeholder="Escribe tu mensaje" required>
+    </textarea>
+    
+    <button type="submit" class="boton">Enviar
+    </button>
+</form>
+{% endblock %}
+
